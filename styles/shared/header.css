@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+/* left section of header */
+.cloud-icon-container {
+  margin-left: 20px;
+  padding-bottom: 5px;
+  width: 47px;
+  border-bottom: 3px solid;
+}
+
+.cloud-icon {
+  height: 28px;
+}
+
+/* middle section of header */
+.links-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+}
+
+.links-container a {  
+  text-decoration: none;
+  color: rgb(0, 136, 255);
+  font-size: 18px;
+}
+
+/* when on page, link follows these styles */
+.links-container .active {
+  color: black;
+  text-decoration: underline;
+}
+
+/* on overing links, links takes these styles */
+.links-container a:hover {
+  color: rgb(9, 111, 201);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .links-container {
+    max-width: 400px;
+  }
+
+  .rocket-icon-container {
+    margin-right: 30px;
+  }
+}
+
+/* right section of header */
+.rocket-icon-container {
+  margin-right: 80px;
+}
+
+.rocket-icon {
+  /* height: 50px; */
+  width: 80px;
+}

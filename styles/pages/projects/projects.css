@@ -1,0 +1,76 @@
+.projects-title {
+  font-size: 30px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.photography-div,
+.graphic-design-div,
+.ui-ux-div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photography-title,
+.graphic-design-title,
+.ui-ux-div {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for switching */
+}
+
+.scrolling-images img {
+  width: 500px; /* Adjust image width */
+  object-fit: cover;
+  object-position: center;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 50;
+
+  font-size: 20px;
+  border-radius: 40px;
+}
+
+.button.left {
+  left: 10px;
+}
+
+.button.right {
+  right: 10px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ui-ux-div {
+  margin-bottom: 70px;
+}
